@@ -26,6 +26,17 @@ module.exports = {
                     },
                     "css-loader"
                 ]
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg|webp)$/i,
+                use:[
+                    {
+                        loader:"file-loader",
+                        options:{
+                            name:"assets/[name].[ext]"
+                        }
+                    },
+                ]
             }
         ]
     },
