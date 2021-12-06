@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssWebpackPlugin = require("mini-css-extract-plugin")
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 module.exports = {
     module:{
         rules:[
@@ -34,6 +35,11 @@ module.exports = {
             filename:"index.html"
         }),
         new MiniCssWebpackPlugin()
-    ]
+    ],
+    optimization:{
+        minimizer:[
+            new CssMinimizerPlugin()
+        ]
+    }
 
 }
