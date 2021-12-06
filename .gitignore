@@ -2,3 +2,4 @@ node_modules/
 dist/
 test/
 this-proyect.md
+.vercel
