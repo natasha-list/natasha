@@ -1,6 +1,7 @@
 import {Header} from '../../components/Header.js'
 import { InformationLayout } from '../../helpers/information_layout.js'
 import WelcomeImage from '../../assets/undraw_note_list_re_r4u9.svg'
+import { Slider} from '../../components/Slider.js'
 export const Home = async ()=>{
     const $Home = document.createElement('section')
     $Home.classList.add('section__home')
@@ -20,5 +21,6 @@ export const Home = async ()=>{
         extraElement:null,
         classFatherBox:'welcome__section',
     }))
+    $Home.appendChild(Slider())
     return $Home
 }
