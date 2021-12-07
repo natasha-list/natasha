@@ -1,3 +1,4 @@
+import Splide from '@splidejs/splide'
 import PhoneOne from '../assets/phone-one.svg'
 import PhoneTwo from '../assets/phone-two.svg'
 export const Slider = ()=>{
@@ -31,4 +32,10 @@ export const Slider = ()=>{
         </div>
     `
     return $Slider
+}
+export const SliderFucntion = ( )=>{
+    new Splide('.splide',{
+        type:'loop',
+        width:'100%'
+    }).mount()
 }
