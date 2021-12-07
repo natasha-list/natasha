@@ -3,5 +3,6 @@ import {fas} from '@fortawesome/free-solid-svg-icons'
 import {fab} from '@fortawesome/free-brands-svg-icons'
 const Icons = ({prefix,iconName})=>{
     library.add(fas,fab)
+    const IconRequest = icon({prefix,iconName})
 }
 export default Icons
