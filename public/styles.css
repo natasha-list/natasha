@@ -14,3 +14,87 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .app__loader__box>img{
     width:60px;
 }
+.info-layout__box__left,.info-layout__box__right{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    display:grid;
+    grid-template-rows:repeat(2,auto) ;
+}
+.info-layout__box__left>img,.info-layout__box__right>img{
+    max-width:80%;
+}
+.info-layout__info-text__box{
+    width:100%;
+}
+
+.info-layout__info__box>p:first-child{
+    font-weight:700;
+    font-size:25px;
+    margin:0;
+}
+.info-layout__info__box>p:last-child{
+    font-weight:400;
+    margin:0;
+    font-size:1rem;
+}
+.info-layout__image__mobile__bottom{
+    grid-row:2/3;
+}
+.info-layout__image__mobile__top{
+    grid-row:1/2;
+}
+@media screen and (min-width:480px) {
+    /* Begin Tablet */
+    .info-layout__box__left{
+        justify-items: flex-start;
+        grid-template-columns:35% auto ;
+        grid-template-rows:1fr;
+    }
+    .info-layout__box__right{
+        justify-items: flex-start;
+        grid-template-columns:auto 35% ;
+        grid-template-rows:1fr;
+    }
+    .info-layout__box>img{
+        max-width:100%;
+    }
+    .info-layout__image__desktop__left{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .info-layout__image__desktop__right{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+}
+ @media screen and (min-width:770px) {
+    /*Begin Laptop */
+    .info-layout__info__box>p:first-child{
+        font-size:2rem;
+    }
+    .info-layout__info__box>p:last-child{
+        font-size:20px;
+    }
+   
+} 
+ @media screen and (min-width:1025px) {
+    /*Begin Desktop */
+    .info-layout__info__box>p:first-child{
+        font-size:45px;
+    }
+    .info-layout__info__box>p:last-child{
+        font-size:25px;
+    }
+    
+} 
+  @media screen and (min-width:1201px) {
+    /* begin TV */
+    .info-layout__info__box>p:first-child{
+        font-size:55px;
+    }
+    .info-layout__info__box>p:last-child{
+        font-size:35px;
+    }
+} 
