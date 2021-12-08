@@ -31,6 +31,7 @@ export const Slider = ()=>{
                     </ul>
             </div>
         </div>
+        <hr class="line__slider">
     `
     return $Slider
 }
