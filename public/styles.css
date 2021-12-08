@@ -236,6 +236,15 @@ nav>ul{
     .slider__box>h2{
         padding-bottom: 4rem;
     }
+    .welcome__section,.slider__box,.download__section{
+        width:70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .line__slider{
+        margin:4rem 0 0 0;
+        color:var(--secondary);
+    }
 }
  @media screen and (min-width:770px) {
     /*Begin Laptop */
