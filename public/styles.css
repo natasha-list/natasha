@@ -58,7 +58,7 @@ nav>ul{
     padding:0 0 1rem 0;
 }
 .menu__link{
-    color:var(--tertiary);
+    color:var(--secondary);
     font-size:1.5625rem;
 }
 .menu__link:hover{
@@ -94,6 +94,9 @@ nav>ul{
     font-size:2rem;
     color:var(--secondary);
     cursor:pointer;
+}
+.new-tas-item:hover{
+    color:var(--white-one);
 }
 .animation-menu-enabled{
     left:0;
