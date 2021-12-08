@@ -34,7 +34,7 @@ header>h1{
 nav{
     background:var(--black-three);
     position:fixed;
-    top:3rem;
+    top:10%;
     bottom:0;
     left:100%;
     right:0;
