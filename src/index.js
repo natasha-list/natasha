@@ -12,4 +12,12 @@ document.addEventListener('click',(e)=>{
         document.querySelector('form').dataset.request = e.target.textContent
         document.getElementById('log-button').value = e.target.textContent
     }
+     if(e.target.matches('.form__close>svg') || e.target.matches('.form__close>svg>path')){
+        document.querySelector('.form__natasha__box').classList.toggle('form__enabled')
+    }
+    if(e.target.matches('.sign__in__option')||e.target.matches('.sign__up__option')){
+        e.preventDefault()
+        document.querySelector('form').dataset.request = e.target.textContent
+        document.getElementById('log-button').value = e.target.textContent
+    }
 })
