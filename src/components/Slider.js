@@ -5,6 +5,7 @@ export const Slider = ()=>{
     const $Slider = document.createElement('section')
     $Slider.classList.add('slider__box')
     $Slider.innerHTML = `
+        <h2 class="how-use">How to use Natasha</h2>
         <div class="splide">
             <div class="splide__track">
                     <ul class="splide__list">
