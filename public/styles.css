@@ -99,7 +99,13 @@ nav>ul{
     left:0;
     transition: 0.3s ease;
 }
-
+.welcome__section{
+    margin:6rem 1rem 3rem 1rem;
+    color:var(--white-one);
+}
+.welcome__section>.info-layout__info-text__box>.info-layout__info__box>p.info-layout__description{
+    padding-bottom:2rem;
+}
 .app__loader__box{
     background:rgba(0, 0, 0, 0.774);
     position:fixed;
