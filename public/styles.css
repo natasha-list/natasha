@@ -230,10 +230,16 @@ nav>ul{
     .slide__box>img{
         width: 200px;
     }
+    .button-download-app{
+        width:60%;
+    }
+    .slider__box>h2{
+        padding-bottom: 4rem;
+    }
 }
  @media screen and (min-width:770px) {
     /*Begin Laptop */
-    .info-layout__info__box>p:first-child{
+    .info-layout__info__box>p:first-child,.slider__box>h2{
         font-size:2rem;
     }
     .info-layout__info__box>p:last-child{
@@ -243,12 +249,13 @@ nav>ul{
 } 
  @media screen and (min-width:1025px) {
     /*Begin Desktop */
-    .info-layout__info__box>p:first-child{
+    .info-layout__info__box>p:first-child,.slider__box>h2{
         font-size:45px;
     }
     .info-layout__info__box>p:last-child{
         font-size:25px;
     }
+
     .slide__box>p{
         font-size:25px;
     }
@@ -258,7 +265,7 @@ nav>ul{
   @media screen and (min-width:1201px) {
 
     /* begin TV */
-    .info-layout__info__box>p:first-child{
+    .info-layout__info__box>p:first-child,.slider__box>h2{
         font-size:55px;
     }
     .info-layout__info__box>p:last-child{
