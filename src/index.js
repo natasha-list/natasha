@@ -20,4 +20,9 @@ document.addEventListener('click',(e)=>{
         document.querySelector('form').dataset.request = e.target.textContent
         document.getElementById('log-button').value = e.target.textContent
     }
+       if(e.target.matches('nav *')){
+        if(document.querySelector('nav').classList.contains('animation-menu-enabled')){
+            document.querySelector('nav').classList.remove('animation-menu-enabled')
+        }
+    }
 })
