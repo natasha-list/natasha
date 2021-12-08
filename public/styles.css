@@ -194,6 +194,105 @@ nav>ul{
 .slide__box>p{
     text-align: center;
 }
+.form__natasha__box{
+    background:rgba(0, 0, 0, 0.616);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display:none;
+    padding:0 2rem;
+}
+.form__natasha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:var(--black-three);
+    padding:4rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+    border-radius:20px;
+    position: relative;
+    animation-name: scale-form; 
+    animation-duration: 1s;
+    animation-iteration-count: initial; 
+}
+.form__enabled{
+    display: flex;
+}
+@keyframes scale-form {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.form__natasha>form{
+    display: flex;
+    flex-direction: column;
+    grid-gap:2rem;
+    font-family:'Poppins','Roboto',sans-serif,serif;
+    padding:0 0 2rem 0;
+}
+.form__natasha>form>input{
+    padding:10px;
+    border:2px solid var(--secondary);
+    color:var(--white-one);
+    background:none;
+    border-radius:10px;
+    outline:none;
+    font-family:'Poppins','Roboto',sans-serif,serif;
+}
+.form__natasha>form>input#log-button{
+    background:var(--primary);
+    font-weight: 700;
+    border:none;
+}
+.form__natasha>form>input::placeholder{
+    color:var(--secondary);
+    font-weight: 500;
+}
+.menu__icons__form{
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    padding:1rem 0 0 0;
+
+}
+.icon__social-media__form>div{
+    cursor:pointer;
+}
+.icon__social-media__form{
+    padding:0 1rem;
+    font-size:2rem;
+    color:var(--secondary);
+}
+.form__close{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    font-size:25px;
+    cursor: pointer;
+    color: var(--secondary);
+}
+.message__request{
+    font-weight: 500;
+    color:var(--white-one);
+    white-space: 10px;
+}
+.message__request>a{
+    font-weight: 700;
+    color:var(--white-one);
+}
 @media screen and (min-width:480px) {
     /* Begin Tablet */
     .info-layout__box__left{
