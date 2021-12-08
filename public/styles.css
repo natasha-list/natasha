@@ -254,7 +254,53 @@ nav>ul{
     .info-layout__info__box>p:last-child{
         font-size:20px;
     }
-   
+    header{
+        display: grid;
+        grid-template-columns:auto 1fr ;
+        grid-gap:2rem;
+    }
+    nav{
+       position:static;
+       left:auto;
+       top:auto;
+       bottom:auto;
+       right:auto;
+    }     
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns:1fr auto;
+        padding:0;
+    }
+    nav>ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+    }
+    nav>ul>.menu__item{
+        padding:0 1rem;
+        font-size:2rem;
+    }
+    .menu__link,.menu__item{
+        font-size:2rem;
+    }
+    .hamburguer__icon{
+        display: none;
+    }
+    .session__buttons{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .session__buttons>button{
+        padding:10px 2rem;
+    }
+   .new-tas-item{
+       position: static;
+   }
 } 
  @media screen and (min-width:1025px) {
     /*Begin Desktop */
