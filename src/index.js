@@ -7,4 +7,9 @@ document.addEventListener('click',(e)=>{
     if(e.target.matches('.hamburguer__icon>svg')||e.target.matches('.hamburguer__icon>svg>path')){
         document.querySelector('nav').classList.toggle('animation-menu-enabled')
     }
+    if(e.target.matches('.session__button')){
+        document.querySelector('.form__natasha__box').classList.toggle('form__enabled')
+        document.querySelector('form').dataset.request = e.target.textContent
+        document.getElementById('log-button').value = e.target.textContent
+    }
 })
