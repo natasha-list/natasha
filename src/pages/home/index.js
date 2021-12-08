@@ -3,6 +3,7 @@ import { InformationLayout } from '../../helpers/information_layout.js'
 import WelcomeImage from '../../assets/undraw_note_list_re_r4u9.svg'
 import DownlaodImage from '../../assets/undraw_in_sync_re_jlqd.svg'
 import { Slider} from '../../components/Slider.js'
+import { Form } from '../../components/Form.js'
 export const Home = async ()=>{
     const $Home = document.createElement('section')
     $Home.classList.add('section__home')
@@ -38,5 +39,6 @@ export const Home = async ()=>{
         extraElement:`<button class="button-download-app">Download</button>`,
         classFatherBox:'download__section',
     }))
+    $Home.appendChild(Form())
     return $Home
 }
