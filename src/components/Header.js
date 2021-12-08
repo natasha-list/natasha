@@ -2,7 +2,7 @@ import Icons from '../helpers/icons.js'
 export const Header = ()=>{
     const $Header = document.createElement('header')
     $Header.innerHTML = `
-        <h1 class="logo">NATASHA</h1>
+        <h1 class="logo">Natasha</h1>
         <div class="hamburguer__icon">${Icons({prefix:'fas',iconName:'bars'})}</div>
         <nav>
             <ul>
