@@ -106,6 +106,17 @@ nav>ul{
 .welcome__section>.info-layout__info-text__box>.info-layout__info__box>p.info-layout__description{
     padding-bottom:2rem;
 }
+.slider__box{
+    color:var(--white-one);
+    margin:3rem 1rem ;
+}
+.slider__box>h2{
+    text-align: center;
+    font-size:25px;
+    font-weight: 700;
+    margin:0;
+    padding:0 0 1rem 0;
+}
 .app__loader__box{
     background:rgba(0, 0, 0, 0.774);
     position:fixed;
