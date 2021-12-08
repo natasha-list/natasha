@@ -245,6 +245,9 @@ nav>ul{
         margin:4rem 0 0 0;
         color:var(--secondary);
     }
+    .welcome__section{
+        padding:3rem 0 0 0 ;
+    }
 }
  @media screen and (min-width:770px) {
     /*Begin Laptop */
